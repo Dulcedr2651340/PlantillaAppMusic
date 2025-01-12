@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menu Adaptativo</title>
+    <style>
+        body {
+            background-color: #1b1b1b;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;             /* Espacio entre los elementos del menú */
+        }
+
+        .menu-item {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-item.active::after,
+        .menu-item:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<nav class="menu">
+    <a href="#" class="menu-item active">Music</a>
+    <a href="#" class="menu-item">Tour</a>
+    <a href="#" class="menu-item">Videos</a>
+    <a href="#" class="menu-item">Archive</a>
+    <a href="#" class="menu-item">LPU</a>
+    <a href="#" class="menu-item">Store</a>
+</nav>
+</body>
+</html>

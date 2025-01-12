@@ -1,0 +1,54 @@
+/* Estilos generales para el body */
+body {
+    background-color: #2b2b2b;  /* Color de fondo */
+    display: flex;
+    justify-content: center;    /* Centra el contenido horizontalmente */
+    align-items: center;        /* Centra el contenido verticalmente */
+    height: 100vh;              /* Altura completa de la ventana */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del menú vertical */
+.vertical-menu {
+    background-color: #333;         /* Color de fondo del menú */
+    padding: 20px;                  /* Espacio interno del contenedor */
+    border-radius: 10px;            /* Bordes redondeados */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilos para cada elemento del menú */
+.menu-item {
+    display: block;                 /* Hace que los elementos estén uno debajo del otro */
+    text-decoration: none;          /* Elimina el subrayado por defecto */
+    color: #fff;                    /* Color del texto */
+    font-size: 24px;                /* Tamaño de fuente */
+    text-transform: uppercase;      /* Texto en mayúsculas */
+    position: relative;             /* Necesario para el subrayado */
+    padding-bottom: 10px;           /* Espacio entre el texto y el subrayado */
+    margin-bottom: 20px;            /* Espacio entre los elementos */
+    transition: color 0.3s;         /* Transición para el color del texto */
+}
+
+/* Estilo del subrayado */
+.menu-item::after {
+    content: '';                    /* Crea el subrayado */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;                       /* Inicia con un ancho de 0 */
+    height: 3px;                    /* Altura del subrayado */
+    background-color: #ffffff;      /* Color del subrayado */
+    transition: width 0.3s ease;    /* Transición suave para el subrayado */
+}
+
+/* Subrayado al pasar el cursor o en el elemento activo */
+.menu-item.active::after,
+.menu-item:hover::after {
+    width: 100%;                    /* Extiende el subrayado al 100% del texto */
+}
+
+/* Cambia el color del texto al pasar el cursor */
+.menu-item:hover {
+    color: #cccccc;
+}
