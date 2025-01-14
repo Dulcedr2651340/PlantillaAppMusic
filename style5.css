@@ -1,0 +1,185 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Sección principal */
+.main-section {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.main-section h1 {
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+/* Listado de canciones */
+.playlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.song-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.song-info {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.song-info h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.song-info p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+}
+
+/* Reproductor fijo en la parte inferior */
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #202020;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.player-song-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.player-song-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.song-artist {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Controles de reproducción */
+.player-controls {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.player-controls button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.player-controls button:hover {
+  color: #1db954; /* Un verde típico de apps de música */
+}
+
+/* Barra de progreso */
+.player-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 30%;
+}
+
+.player-progress span {
+  font-size: 0.9rem;
+}
+
+.player-progress input[type="range"] {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Control de volumen */
+.player-volume {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.player-volume input[type="range"] {
+  width: 80px;
+  cursor: pointer;
+}
