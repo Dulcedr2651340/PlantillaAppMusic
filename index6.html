@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App Musical - Estilo Spotify</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Contenedor principal -->
+  <div class="app-container">
+    <!-- Barra lateral izquierda -->
+    <aside class="sidebar">
+      <!-- Sección superior de iconos (Home, Buscar, Tu biblioteca, etc.) -->
+      <div class="sidebar-top">
+        <a href="#" class="sidebar-icon active" title="Inicio">🏠</a>
+        <a href="#" class="sidebar-icon" title="Buscar">🔎</a>
+        <a href="#" class="sidebar-icon" title="Tu biblioteca">📚</a>
+      </div>
+
+      <!-- Sección de marcadores / menús / playlists -->
+      <div class="sidebar-middle">
+        <a href="#" class="playlist-fav">❤️ Tus me gusta</a>
+        <a href="#">Playlist 1</a>
+        <a href="#">Playlist 2</a>
+        <a href="#">Descubrimiento semanal</a>
+        <a href="#">DJ</a>
+        <a href="#">FLOW</a>
+        <!-- Agrega más elementos si deseas -->
+      </div>
+
+      <!-- Sección inferior (puede contener iconos, configuraciones, etc.) -->
+      <div class="sidebar-bottom">
+        <!-- Ejemplo de iconos adicionales -->
+        <a href="#" class="sidebar-icon" title="Configuración">⚙️</a>
+      </div>
+    </aside>
+
+    <!-- Contenedor principal central + columna derecha -->
+    <div class="main-wrapper">
+      <!-- Sección central (con scroll) -->
+      <main class="main-content">
+        <!-- Barra superior o encabezado (buscador, perfil, etc.) -->
+        <header class="topbar">
+          <input 
+            type="text" 
+            placeholder="¿Qué quieres reproducir?" 
+            class="search-input"
+          />
+          <div class="user-icon" title="Perfil">
+            <!-- Podrías incluir una imagen de usuario aquí -->
+            <img 
+              src="https://via.placeholder.com/32" 
+              alt="Perfil" 
+            />
+          </div>
+        </header>
+
+        <!-- Sección de playlists y recomendaciones en la parte central -->
+        <section class="playlists-view">
+          <h2>Elegido para ti</h2>
+          <div class="playlist-grid">
+            <!-- Tarjeta de playlist o canción -->
+            <div class="playlist-card">
+              <img 
+                src="https://via.placeholder.com/150" 
+                alt="Cover" 
+              />
+              <div class="playlist-info">
+                <h3>Mi playlist</h3>
+                <p>Descripción breve</p>
+              </div>
+            </div>
+
+            <div class="playlist-card">
+              <img 
+                src="https://via.placeholder.com/150" 
+                alt="Cover" 
+              />
+              <div class="playlist-info">
+                <h3>Tu playlist</h3>
+                <p>Descripción breve</p>
+              </div>
+            </div>
+
+            <!-- Agrega más tarjetas según necesites -->
+          </div>
+        </section>
+      </main>
+
+      <!-- Columna derecha (información adicional del artista, álbum, etc.) -->
+      <aside class="right-panel">
+        <h2>Detalles</h2>
+        <div class="details-container">
+          <!-- Aquí podrías mostrar portada grande, información del artista, etc. -->
+          <img 
+            src="https://via.placeholder.com/200" 
+            alt="Portada grande" 
+          />
+          <h3>Alien Blues</h3>
+          <p>Vundabar</p>
+          <!-- Más detalles del artista, links, etc. -->
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Reproductor fijo en la parte inferior -->
+  <footer class="player-bar">
+    <div class="player-left">
+      <img 
+        src="https://via.placeholder.com/50" 
+        alt="Cover" 
+        class="cover-img"
+      />
+      <div class="song-info">
+        <span class="song-title">Alien Blues</span>
+        <span class="song-artist">Vundabar</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <button>⏮️</button>
+      <button>▶️</button>
+      <button>⏭️</button>
+      <div class="progress-bar">
+        <span>1:05</span>
+        <input type="range" min="0" max="130" value="65"/>
+        <span>-1:30</span>
+      </div>
+    </div>
+    <div class="player-right">
+      <button>🔊</button>
+      <input type="range" min="0" max="100" value="60" class="volume-range"/>
+    </div>
+  </footer>
+</body>
+</html>
