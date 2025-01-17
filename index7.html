@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Style - Artista Popular</title>
+  <link rel="stylesheet" href="style7.css" />
+</head>
+<body>
+  <!-- Barra superior (logo, navegación, perfil, etc.) -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <!-- Logo o nombre de tu app -->
+      <div class="logo">Spotify</div>
+      <!-- Ruta de navegación (ejemplo) -->
+      <nav class="breadcrumb">
+        <a href="#">Home</a> 
+        <span>></span>
+        <a href="#">Popular Artist</a>
+      </nav>
+    </div>
+    <div class="topbar-right">
+      <!-- Botón de Upgrade -->
+      <button class="upgrade-btn">Upgrade</button>
+      <!-- Perfil de Usuario -->
+      <div class="user-info">
+        <img 
+          src="https://via.placeholder.com/32" 
+          alt="Perfil" 
+          class="user-avatar"
+        />
+        <span class="username">Dibbendo</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor de la aplicación (barra lateral + contenido principal) -->
+  <div class="app-container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div class="search-section">
+        <input 
+          type="text" 
+          placeholder="Search..." 
+          class="search-input"
+        />
+      </div>
+
+      <div class="menu-section">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Artists</a></li>
+          <li><a href="#">Podcasts</a></li>
+        </ul>
+      </div>
+
+      <div class="library-section">
+        <h3>Library</h3>
+        <ul>
+          <li><a href="#">Liked Albums</a></li>
+          <li><a href="#">Liked Songs</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <!-- Encabezado del artista -->
+      <section class="artist-hero">
+        <div class="artist-info">
+          <h1>Rihanna</h1>
+          <p class="monthly-listeners">71,478,075 monthly listeners</p>
+          <div class="action-buttons">
+            <button class="play-btn">▶ Play</button>
+            <button class="follow-btn">Following</button>
+          </div>
+        </div>
+        <div class="artist-image">
+          <img 
+            src="https://via.placeholder.com/320x400?text=Artist+Photo" 
+            alt="Artista" 
+          />
+        </div>
+      </section>
+
+      <!-- Sección de canciones populares -->
+      <section class="popular-section">
+        <h2>Popular</h2>
+        <table class="tracks-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Título</th>
+              <th>Streams</th>
+              <th>Duración</th>
+              <th></th> <!-- Para el ícono de corazón o menú -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>We Found Love</td>
+              <td>1,233,79,302</td>
+              <td>3:45</td>
+              <td>❤️</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Umbrella</td>
+              <td>1,893,79,302</td>
+              <td>4:35</td>
+              <td>❤️</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Love on the Brain</td>
+              <td>657,79,903</td>
+              <td>4:21</td>
+              <td>❤️</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Diamonds</td>
+              <td>783,79,302</td>
+              <td>3:56</td>
+              <td>❤️</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Love on the Brain</td>
+              <td>783,79,302</td>
+              <td>3:45</td>
+              <td>❤️</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Panel derecho (Discografía, etc.) -->
+    <aside class="right-panel">
+      <h2>Discography</h2>
+      <div class="discography-tabs">
+        <button class="active">Album</button>
+        <button>Songs</button>
+        <button>Singles</button>
+      </div>
+      <div class="discography-list">
+        <div class="album-item">
+          <img 
+            src="https://via.placeholder.com/80" 
+            alt="Album cover" 
+          />
+          <div>
+            <h4>Loud</h4>
+            <p>2010 • Album</p>
+          </div>
+        </div>
+        <div class="album-item">
+          <img 
+            src="https://via.placeholder.com/80" 
+            alt="Album cover" 
+          />
+          <div>
+            <h4>Black Panther</h4>
+            <p>2018 • Album</p>
+          </div>
+        </div>
+        <div class="album-item">
+          <img 
+            src="https://via.placeholder.com/80" 
+            alt="Album cover"
+          />
+          <div>
+            <h4>Anti</h4>
+            <p>2016 • Album</p>
+          </div>
+        </div>
+        <div class="album-item">
+          <img 
+            src="https://via.placeholder.com/80" 
+            alt="Album cover" 
+          />
+          <div>
+            <h4>Talk That Talk</h4>
+            <p>2011 • Album</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Reproductor fijo inferior -->
+  <footer class="player-bar">
+    <div class="player-left">
+      <img 
+        src="https://via.placeholder.com/50" 
+        alt="Cover" 
+        class="cover-img"
+      />
+      <div class="song-info">
+        <span class="song-title">Love on the brain</span>
+        <span class="song-artist">Rihanna, Calvin Harris</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <button>⏮️</button>
+      <button>▶️</button>
+      <button>⏭️</button>
+      <div class="progress-bar">
+        <span>1:45</span>
+        <input type="range" min="0" max="262" value="105"/>
+        <span>4:42</span>
+      </div>
+    </div>
+    <div class="player-right">
+      <button>🔊</button>
+      <input type="range" min="0" max="100" value="50" class="volume-range"/>
+    </div>
+  </footer>
+</body>
+</html>
