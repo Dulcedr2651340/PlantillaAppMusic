@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music App - Lady Gaga Style</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="logo">
+      <img src="https://via.placeholder.com/40" alt="Logo" />
+      <span>My Music</span>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Music" />
+    </div>
+    <div class="categories">
+      <button>Rock</button>
+      <button class="active">Popular music</button>
+      <button>Pop music</button>
+      <button>Jazz</button>
+    </div>
+  </header>
+
+  <!-- Contenedor principal con 3 columnas: izquierda, centro y derecha -->
+  <div class="app-container">
+    <!-- Barra lateral izquierda -->
+    <aside class="sidebar-left">
+      <div class="sidebar-user">
+        <img src="https://via.placeholder.com/50" alt="User" class="user-avatar"/>
+        <div class="user-info">
+          <h4>My Music</h4>
+          <p>Playlists</p>
+        </div>
+      </div>
+
+      <nav class="music-list">
+        <ul>
+          <li class="active">
+            <span class="song-name">Poker Face</span>
+            <span class="duration">3:22</span>
+          </li>
+          <li>
+            <span class="song-name">Born This Way</span>
+            <span class="duration">4:05</span>
+          </li>
+          <li>
+            <span class="song-name">ARTPOP</span>
+            <span class="duration">3:45</span>
+          </li>
+          <li>
+            <span class="song-name">Chromatica</span>
+            <span class="duration">3:57</span>
+          </li>
+          <li>
+            <span class="song-name">A Star Is Born</span>
+            <span class="duration">4:12</span>
+          </li>
+          <!-- Agrega más canciones si lo deseas -->
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Sección central -->
+    <main class="main-center">
+      <!-- Carátulas circulares y waveform -->
+      <section class="now-playing">
+        <div class="artist-images">
+          <!-- 3 imágenes circulares de ejemplo -->
+          <img 
+            src="https://via.placeholder.com/180/FF0080/FFFFFF?text=Lady+Gaga" 
+            alt="Lady Gaga 1" class="artist-circle" 
+          />
+          <img 
+            src="https://via.placeholder.com/180/FFC0CB/FFFFFF?text=Lady+Gaga" 
+            alt="Lady Gaga 2" class="artist-circle" 
+          />
+          <img 
+            src="https://via.placeholder.com/180/FED9B7/FFFFFF?text=Lady+Gaga" 
+            alt="Lady Gaga 3" class="artist-circle" 
+          />
+        </div>
+        <div class="track-info">
+          <h2 class="track-title">Poker Face</h2>
+          <p class="artist-name">Lady Gaga</p>
+          <div class="waveform">
+            <!-- Waveform ficticio (imagen placeholder) -->
+            <img 
+              src="https://via.placeholder.com/600x50?text=Waveform" 
+              alt="Waveform" 
+            />
+            <span class="time-elapsed">0:11</span>
+            <span class="time-total">3:22</span>
+          </div>
+        </div>
+        <!-- Controles de reproducción -->
+        <div class="player-controls">
+          <button>⏮️</button>
+          <button>▶️</button>
+          <button>⏭️</button>
+          <button>🔁</button>
+          <button>🔀</button>
+        </div>
+      </section>
+
+      <!-- Lista de álbumes o canciones debajo -->
+      <section class="albums-section">
+        <h3>Lady Gaga Albums</h3>
+        <div class="albums-grid">
+          <div class="album-card">
+            <img src="https://via.placeholder.com/80" alt="The Fame" />
+            <div class="album-info">
+              <p>The Fame</p>
+              <button>Edit</button>
+            </div>
+          </div>
+          <div class="album-card">
+            <img src="https://via.placeholder.com/80" alt="Born This Way" />
+            <div class="album-info">
+              <p>Born This Way</p>
+              <button>Edit</button>
+            </div>
+          </div>
+          <div class="album-card">
+            <img src="https://via.placeholder.com/80" alt="ARTPOP" />
+            <div class="album-info">
+              <p>ARTPOP</p>
+              <button>Edit</button>
+            </div>
+          </div>
+          <div class="album-card">
+            <img src="https://via.placeholder.com/80" alt="Joanne" />
+            <div class="album-info">
+              <p>Joanne</p>
+              <button>Edit</button>
+            </div>
+          </div>
+          <div class="album-card">
+            <img src="https://via.placeholder.com/80" alt="Chromatica" />
+            <div class="album-info">
+              <p>Chromatica</p>
+              <button>Edit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Panel derecho: publicidad, IA, etc. -->
+    <aside class="sidebar-right">
+      <div class="ad-panel">
+        <h3>Write Your Request to the Asistent</h3>
+        <p>Gold standard in commercial music licensing. Quality music, tailored for business needs.</p>
+        <div class="tags">
+          <button>Blues</button>
+          <button>Electronic music</button>
+          <button>Rhythm and blues</button>
+          <button>Country music</button>
+        </div>
+      </div>
+      <div class="assistant-panel">
+        <h3>All about this AI Asistent</h3>
+        <div class="ai-info">
+          <div class="ai-box">
+            <p>How to use AI Asistent</p>
+            <span>389 Answer</span>
+          </div>
+          <div class="ai-box">
+            <p>Create a hit for just one press</p>
+            <span>88 Answer</span>
+          </div>
+        </div>
+        <!-- Chat input o lo que quieras poner -->
+        <div class="assistant-input">
+          <input type="text" placeholder="Type your message..." />
+          <button>Send</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
