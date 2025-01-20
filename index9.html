@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John's Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="app-container">
+    <!-- BARRA LATERAL IZQUIERDA -->
+    <aside class="left-sidebar">
+      <!-- Logo o icono de la app -->
+      <div class="sidebar-logo">
+        <img 
+          src="https://via.placeholder.com/40/FFD800/000?text=Logo" 
+          alt="App Logo" 
+        />
+      </div>
+      <!-- Iconos de secciones -->
+      <nav class="sidebar-icons">
+        <button title="Home">🏠</button>
+        <button title="Settings">⚙️</button>
+        <button title="Profile">👤</button>
+        <button title="Help">❓</button>
+      </nav>
+    </aside>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <main class="main-section">
+      <!-- ENCABEZADO SUPERIOR -->
+      <header class="studio-header">
+        <h1>John's Studio</h1>
+        <div class="studio-controls">
+          <!-- Botones de ejemplo (mute, share, settings, etc.) -->
+          <button title="Mute">🔇</button>
+          <button title="Screen Share">💻</button>
+          <button title="Recording Settings">🎥</button>
+          <button title="More Options">⋮</button>
+        </div>
+      </header>
+
+      <!-- SECCIÓN DE VIDEO PRINCIPAL -->
+      <section class="video-container">
+        <!-- Video grande principal -->
+        <div class="main-video">
+          <img 
+            src="https://via.placeholder.com/600x400/444444/FFFFFF?text=John+Phillips" 
+            alt="John Phillips" 
+          />
+          <div class="on-air-info">
+            <span>01:09:32</span>
+            <span class="live-label">On Air</span>
+          </div>
+          <div class="main-video-footer">
+            <p>Johnson Phillips</p>
+            <!-- Controles para la pista individual -->
+            <div class="video-track-controls">
+              <button>Mic</button>
+              <button>Cam</button>
+              <button>Vol</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Videos secundarios (columna derecha) -->
+        <div class="secondary-videos">
+          <div class="secondary-video">
+            <img 
+              src="https://via.placeholder.com/120x80/810541/FFFFFF?text=Mia+Hawkins" 
+              alt="Mia Hawkins" 
+            />
+            <p>Mia Hawkins</p>
+          </div>
+          <div class="secondary-video">
+            <img 
+              src="https://via.placeholder.com/120x80/004B8D/FFFFFF?text=Michael+Thomson" 
+              alt="Michael Thomson" 
+            />
+            <p>Michael Thomson</p>
+          </div>
+          <!-- Agrega más videos si lo deseas -->
+        </div>
+      </section>
+
+      <!-- SECCIÓN DE MEZCLA Y TIMELINE -->
+      <section class="studio-mixer-timeline">
+        <!-- Panel de efectos / mixer -->
+        <div class="mixer-panel">
+          <div class="mixer-tabs">
+            <button class="active">Autotune</button>
+            <button>Mixer</button>
+          </div>
+          <div class="faders">
+            <!-- Faders de ejemplo para 3 usuarios -->
+            <div class="fader">
+              <label>John</label>
+              <input type="range" min="0" max="100" value="80" />
+            </div>
+            <div class="fader">
+              <label>Mia</label>
+              <input type="range" min="0" max="100" value="60" />
+            </div>
+            <div class="fader">
+              <label>Michael</label>
+              <input type="range" min="0" max="100" value="70" />
+            </div>
+          </div>
+        </div>
+        
+        <!-- Timeline (pistas de audio) -->
+        <div class="timeline-panel">
+          <div class="timeline-controls">
+            <!-- Botones de zoom, etc. -->
+            <button>Zoom -</button>
+            <button>Zoom +</button>
+          </div>
+          <div class="timeline-tracks">
+            <!-- Ejemplo de 3 pistas (John, Mia, Michael) -->
+            <div class="track-row">
+              <span class="track-label">John</span>
+              <div class="track-block" style="width: 40%;">
+                <p>John</p>
+              </div>
+            </div>
+            <div class="track-row">
+              <span class="track-label">Mia</span>
+              <div class="track-block red-stripes" style="width: 60%;">
+                <p>Mia</p>
+              </div>
+            </div>
+            <div class="track-row">
+              <span class="track-label">Michael</span>
+              <div class="track-block gray-stripes" style="width: 50%;">
+                <p>Michael</p>
+              </div>
+            </div>
+            <!-- Barra vertical para indicador de tiempo -->
+            <div class="timeline-cursor"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PANEL DERECHO -->
+    <aside class="right-panel">
+      <!-- Bloque de rating -->
+      <div class="rating-panel">
+        <h3>Rate your studio experience</h3>
+        <p>Your feedback will help make the app better</p>
+        <div class="stars">
+          <!-- Simplemente texto con estrellas. Agrega interactividad con JS si deseas -->
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+      </div>
+
+      <!-- Bloque de oyentes -->
+      <div class="listeners-panel">
+        <h4>Listeners</h4>
+        <p>1090 <span class="green-indicator">+14.0%</span></p>
+        <ul>
+          <li><span>🇬🇧</span> United Kingdom - 37%</li>
+          <li><span>🇸🇪</span> Sweden - 23%</li>
+          <li><span>🇮🇹</span> Italy - 12%</li>
+          <li><span>🇩🇪</span> Germany - 11%</li>
+          <!-- Agrega más países -->
+        </ul>
+      </div>
+
+      <!-- Panel de chat -->
+      <div class="chat-panel">
+        <h4>Chat</h4>
+        <div class="chat-messages">
+          <div class="message">
+            <span class="user">John:</span> <span>I like this guitar riff...</span>
+          </div>
+          <div class="message">
+            <span class="user">Mia:</span> <span>Hi there everybody!</span>
+          </div>
+          <div class="message">
+            <span class="user">Michael:</span> <span>Mia has such a captivating voice...</span>
+          </div>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Type your message..." />
+          <button>Send</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
