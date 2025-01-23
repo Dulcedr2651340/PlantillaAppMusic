@@ -1,0 +1,155 @@
+/* RESET Y TIPOGRAFÍA BÁSICA */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: #0f172a; /* Fondo oscuro */
+  color: #ffffff;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent; /* Se integra con el fondo del body */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: #8b8b8b;
+}
+
+.signup-btn a {
+  background-color: #b0ff29; /* Verde neón aproximado */
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.signup-btn a:hover {
+  background-color: #d4ff66;
+}
+
+/* SECCIÓN HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 4rem;
+  position: relative;
+  min-height: 80vh;
+}
+
+/* CONTENIDO DEL HERO (TEXTO Y BOTÓN) */
+.hero-content {
+  flex: 1;
+  max-width: 40%;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero-content strong {
+  color: #b0ff29;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  color: #cfcfcf;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
+}
+
+.cta-button {
+  background: #b0ff29; /* Botón neón */
+  color: #000;
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #d4ff66;
+}
+
+/* CONTENEDOR DE LA IMAGEN CON MÁSCARA */
+.hero-wave-mask {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Aseguramos que el div no encoja */
+  min-width: 300px;
+  position: relative;
+}
+
+/* Imagen con máscara de ondas */
+.masked-image {
+  width: 100%;
+  max-width: 450px;
+  /* Asegúrate de que la altura se ajuste al contenedor */
+  height: auto;
+  object-fit: cover;
+
+  /* 1) Subimos un SVG que tiene la forma de onda. 
+     2) Lo usamos como 'mask-image'. 
+     3) Puedes crearlo tú mismo o ajustarlo a tu preferencia. */
+  mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><g><ellipse cx='10' cy='50' rx='5' ry='20'/><ellipse cx='25' cy='50' rx='7' ry='35'/><ellipse cx='40' cy='50' rx='7' ry='25'/><ellipse cx='55' cy='50' rx='6' ry='40'/><ellipse cx='70' cy='50' rx='5' ry='25'/><ellipse cx='85' cy='50' rx='4' ry='15'/></g></svg>");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  mask-mode: alpha;
+}
+
+/* Ajustes responsivos (Ejemplo) */
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .masked-image {
+    max-width: 300px;
+  }
+}
