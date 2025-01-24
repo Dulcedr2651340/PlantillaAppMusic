@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Contenedor principal de la app -->
+  <div class="app-container">
+    <!-- Barra lateral izquierda con iconos -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <!-- Logo o ícono principal -->
+        <div class="logo">
+          <!-- Podrías usar una imagen en lugar de texto/emoji -->
+          <span>🎵</span>
+        </div>
+        <!-- Navegación con iconos -->
+        <nav class="nav-icons">
+          <a href="#" class="active" title="Home">🏠</a>
+          <a href="#" title="Music">🎼</a>
+          <a href="#" title="Favorites">❤️</a>
+          <a href="#" title="Playlists">🗒️</a>
+          <a href="#" title="Settings">⚙️</a>
+        </nav>
+      </div>
+      <div class="sidebar-bottom">
+        <!-- Otros botones / iconos, si se requiere -->
+      </div>
+    </aside>
+
+    <!-- Contenedor principal (derecha) -->
+    <main class="main-content">
+      <!-- Encabezado superior (Home, search, notificaciones) -->
+      <header class="topbar">
+        <h1>Home</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button title="Notifications">🔔</button>
+        </div>
+      </header>
+
+      <!-- Sección central del dashboard -->
+      <section class="dashboard-content">
+        <!-- Imagen destacada / banner -->
+        <div class="featured-banner">
+          <img 
+            src="https://via.placeholder.com/800x250?text=R%26B+Now" 
+            alt="R&B Now Banner" 
+          />
+        </div>
+
+        <!-- Contenido principal - filas (Trending y Top Artist / Favourites) -->
+        <div class="main-layout">
+          <!-- Lista de canciones: Trending right now -->
+          <div class="trending-section">
+            <div class="trending-header">
+              <h2>Trending right now</h2>
+              <a href="#">See all</a>
+            </div>
+            <!-- Tabla / lista de canciones -->
+            <table class="trending-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Song</th>
+                  <th>Duration</th>
+                  <th>Plays</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Ejemplo de canción 1 -->
+                <tr>
+                  <td>01</td>
+                  <td>
+                    <div class="song-cell">
+                      <img 
+                        src="https://via.placeholder.com/40?text=I'm+Good" 
+                        alt="Song Cover" 
+                      />
+                      <div>
+                        <p>I'm Good (Blue)</p>
+                        <span>David Guetta & Bebe Rexha</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>03:29</td>
+                  <td>8,078,651</td>
+                  <td>❤️</td>
+                </tr>
+                <!-- Ejemplo de canción 2 -->
+                <tr>
+                  <td>02</td>
+                  <td>
+                    <div class="song-cell">
+                      <img 
+                        src="https://via.placeholder.com/40?text=Under+the+Influence" 
+                        alt="Song Cover" 
+                      />
+                      <div>
+                        <p>Under the Influence</p>
+                        <span>Chris Brown</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>03:04</td>
+                  <td>2,341,221</td>
+                  <td>❤️</td>
+                </tr>
+                <!-- Agrega más filas si lo deseas -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Sección derecha: Top Artist y Recent favourites -->
+          <div class="right-panels">
+            <!-- Top Artist -->
+            <div class="top-artist">
+              <div class="panel-header">
+                <h3>Top Artist</h3>
+                <a href="#">See all</a>
+              </div>
+              <ul>
+                <li>
+                  <img 
+                    src="https://via.placeholder.com/40?text=Muse" 
+                    alt="Muse" 
+                  />
+                  <div class="artist-info">
+                    <strong>Muse</strong>
+                    <p>142921 Followers • 119M Plays</p>
+                  </div>
+                  <button title="More options">⋮</button>
+                </li>
+                <li>
+                  <img 
+                    src="https://via.placeholder.com/40?text=BMTH" 
+                    alt="Bring Me the Horizon" 
+                  />
+                  <div class="artist-info">
+                    <strong>Bring Me the Horizon</strong>
+                    <p>56781 Followers • 58M Plays</p>
+                  </div>
+                  <button>⋮</button>
+                </li>
+                <li>
+                  <img 
+                    src="https://via.placeholder.com/40?text=Ed" 
+                    alt="Ed Sheeran" 
+                  />
+                  <div class="artist-info">
+                    <strong>Ed Sheeran</strong>
+                    <p>49435 Followers • 99M Plays</p>
+                  </div>
+                  <button>⋮</button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Recent favourites -->
+            <div class="recent-favourites">
+              <h3>Recent favourites</h3>
+              <div class="favourites-grid">
+                <!-- Ejemplo de 3 tarjetas -->
+                <div class="favourite-card">
+                  <div class="fav-image">
+                    <img 
+                      src="https://via.placeholder.com/80?text=Family" 
+                      alt="Family tourism" 
+                    />
+                  </div>
+                  <div class="fav-info">
+                    <h4>Family tourism</h4>
+                    <p>The more, the merrier. Suitable for children.</p>
+                  </div>
+                </div>
+
+                <div class="favourite-card">
+                  <div class="fav-image">
+                    <img 
+                      src="https://via.placeholder.com/80?text=Bright+Hits" 
+                      alt="Bright Hits" 
+                    />
+                  </div>
+                  <div class="fav-info">
+                    <h4>Bright Hits</h4>
+                    <p>The most popular and striking music news</p>
+                  </div>
+                </div>
+
+                <div class="favourite-card">
+                  <div class="fav-image">
+                    <img 
+                      src="https://via.placeholder.com/80?text=Freeze" 
+                      alt="Freeze" 
+                    />
+                  </div>
+                  <div class="fav-info">
+                    <h4>Freeze</h4>
+                    <p>A winter-themed playlist for chilling out</p>
+                  </div>
+                </div>
+                <!-- Agrega más tarjetas si quieres -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
