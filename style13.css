@@ -1,0 +1,195 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #FFD600; /* Fondo amarillo */
+  color: #000;
+  overflow-x: hidden; /* Evitar scroll horizontal */
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff; /* Fondo blanco para el “contenido” */
+  margin: 0 auto;
+  box-shadow: 0 0 0 10px #FFD600; /* Borde grueso amarillo alrededor */
+  position: relative;
+}
+
+/* ENCABEZADO */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: 2px solid #000;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-badge {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.icon-badge span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buy-btn {
+  background: #fff;
+  border: 2px solid #000;
+  padding: 0.4rem 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* SECCIÓN PRINCIPAL */
+.main-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* TÍTULO GRANDE */
+.big-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* WALLET SECTION */
+.wallet-section {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: #f2f2f2;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.wallet-address {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copy-btn {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* CONTENEDOR BEACH + PERSONAJE */
+.beach-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.beach-bg {
+  display: block;
+  width: 800px;
+  max-width: 90%;
+  border-radius: 8px;
+}
+
+.sandy-character {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  max-width: 70%;
+}
+
+/* PIE DE PÁGINA (barra inferior con $ANDY repetido) */
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFD600;
+  color: #000;
+  padding: 0.5rem;
+  border-top: 2px solid #000;
+  box-shadow: 0 -3px 5px rgba(0,0,0,0.2);
+}
+
+/* Efecto “marquee” manual */
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scrolling 8s linear infinite;
+}
+.marquee span {
+  display: inline-block;
+}
+
+/* Animación marquee */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE (EJEMPLO) */
+@media (max-width: 768px) {
+  .big-title {
+    font-size: 2rem;
+  }
+  .beach-bg {
+    width: 100%;
+  }
+  .sandy-character {
+    width: 200px;
+  }
+}
