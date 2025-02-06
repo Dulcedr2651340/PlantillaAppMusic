@@ -1,0 +1,178 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #e0f7ff; /* Color celeste suave como fondo general */
+  color: #000;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff; /* Fondo blanco si deseas */
+  border: 2px solid #000; /* Borde estilo “ventana” */
+}
+
+/* BARRA SUPERIOR */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f5f5;
+  border-bottom: 2px solid #000;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+}
+
+/* ÍCONOS IZQUIERDA */
+.left-icons {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.icon-btn {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* BARRA DE DIRECCIÓN (ficticia) */
+.address-bar {
+  flex: 1;
+  margin: 0 0.5rem;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+}
+.address-bar p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* BOTÓN BUY $WFC */
+.buy-wfc-btn {
+  background: #fff;
+  border: 2px solid #000;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #000;
+}
+
+/* SECCIÓN PRINCIPAL HERO */
+.hero-section {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGEN DE FONDO */
+.island-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* CONTENIDO CENTRAL (TEXTO Y BOTONES) */
+.center-content {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+}
+.center-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #fff;
+  margin-bottom: 1rem;
+}
+.center-content h1 span {
+  color: #4faaff; /* Azul más brillante */
+}
+.buttons-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.buy-btn, .chart-btn {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buy-btn {
+  color: #008aff;
+}
+
+.chart-btn {
+  color: #000;
+}
+
+/* BARRA INFERIOR (CA: Y BOTÓN COPIAR) */
+.bottom-bar {
+  width: 100%;
+  background: #fff;
+  border-top: 2px solid #000;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ca-text {
+  flex: 1;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.copy-btn {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* AJUSTES RESPONSIVOS (EJEMPLO) */
+@media(max-width: 768px) {
+  .center-content h1 {
+    font-size: 2rem;
+  }
+  .buy-btn, .chart-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
